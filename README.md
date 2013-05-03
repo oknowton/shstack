@@ -72,3 +72,7 @@ usage: s <command> [command [[stack] [item(s)]]]
     dns2.serverswarm.com     UP
     mail.patshead.com        UP
     wonko@zaphod:~$ 
+
+### Screen shots
+
+There are a couple of screen shots and some slightly more verbose ramblings about shstack [available on my website](http://blog.patshead.com/2013/05/shstack-persistent-and-easy-to-use-stacks-shared-between-shell-sessions.html)

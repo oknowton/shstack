@@ -214,6 +214,7 @@ sub command_sfor {
 
   if (@{$pairs->{$key}}) {
     for (@{$pairs->{$key}}) {
+      $_=quotemeta($_);
       my $forCommand=join ' ', @ARGV;
       $forCommand =~ s/%%/$_/g;
       $forCommand =~ s/{}/$_/g;

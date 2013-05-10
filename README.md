@@ -7,7 +7,6 @@ shstack lets you push files and directories onto named stacks.  The stacks are s
 ## Known Bugs
 
  * Some Perl warning messages (the ones I saw didn't cause trouble)
- * `for` and `sfor` don't handle filenames with spaces correctly
 
 ## Output of the help command
 

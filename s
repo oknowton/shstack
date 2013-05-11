@@ -184,13 +184,17 @@ sub command_show {
 }
 
 sub command_copy {
-  my $key=shift @ARGV;
+  my $src=shift @ARGV;
+  my $dst=shift @ARGV;
 
-  if (@{$pairs->{$key}}) {
-    open(my $clipboard, "| xclip") or die 'xclip not available';
-    print $clipboard join "\n", @{$pairs->{$key}};
-    print $clipboard "\n";
-    close($clipboard);
+  if ($pairs->{$src}) {
+    if ($pairs->{$dst}) {
+      print "Will not overwrite existing stack $dst.\n"
+    } else {
+      @{$pairs->{$dst}}=@{$pairs->{$src}};
+    }
+  } else {
+    print "Stack $src does not exist.\n";
   }
 
 }

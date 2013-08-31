@@ -10,30 +10,31 @@ shstack lets you push files and directories onto named stacks.  The stacks are s
 
 ## Output of the help command
 
-usage: s <command> [command [[stack] [item(s)]]]
+    usage: s <command> [command [[stack] [item(s)]]]
 
-  list    List active stacks, no need to specify a stack
-  show    List the items in the named stack
-  edit    Opens the stack in $EDITOR
+      list    List active stacks, no need to specify a stack
+      show    List the items in the named stack
+      edit    Opens the stack in $EDITOR
 
-  get     Pretend these aren't stacks, get the top value of a stack
-  set     Pretend these aren't stacks, set the top value of a stack
+      get     Pretend these aren't stacks, get the top value of a stack
+      set     Pretend these aren't stacks, set the top value of a stack
 
-  push    Push an item onto the top of the named stack
-  pop     Pop an item off of the top of the named stack
-  shift   Shift an item onto the bottom of the named stack
-  unshift Unshift an item off of the bottom of the named stack
+      push    Push an item onto the top of the named stack
+      pop     Pop an item off of the top of the named stack
+      shift   Shift an item onto the bottom of the named stack
+      unshift Unshift an item off of the bottom of the named stack
 
-  print0  Output named stack for piping to xargs -0, stack is unmodified
-  push0   push output of find -print0 onto a stack
+      print0  Output named stack for piping to xargs -0, stack is unmodified
+      push0   push output of find -print0 onto a stack
 
-  for     Execute a command on each item in a stack, stack is unmodified
-  sfor    Works like for, but items are removed from stack on command success
+      for     Execute a command on each item in a stack, stack is unmodified
+      sfor    Works like for, but items are removed from stack on command success
 
-  copy    Make a copy of a stack
-  delete  Delete a stack
+      copy    Make a copy of a stack
+      delete  Delete a stack
 
-  help    Verbose help for above commands
+      help    Verbose help for above commands
+
 
 ## Some usage examples
 
